@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Happy Birthday, Anis Chacha!</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0; font-family: Georgia, "Times New Roman", serif;
+      color: #fff8f1; background: #160f2b; text-align: center;
+    }
+    .hero {
+      min-height: 100vh; padding: 70px 20px 55px; position: relative;
+      overflow: hidden; display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      background: radial-gradient(circle at top, #68428e 0, #2d1b4d 42%, #160f2b 78%);
+    }
+    .glow {
+      position: absolute; width: 300px; height: 300px; border-radius: 50%;
+      background: #ffca8a; opacity: .12; filter: blur(55px); top: 8%; right: -90px;
+    }
+    .eyebrow { letter-spacing: 5px; text-transform: uppercase; color: #ffd99d; font: 12px Arial, sans-serif; }
+    h1 { font-size: clamp(42px, 9vw, 82px); line-height: 1.04; margin: 22px 0 15px; }
+    h1 span { color: #ffd99d; font-style: italic; }
+    .subtitle { max-width: 620px; line-height: 1.8; font: 17px/1.8 Arial, sans-serif; color: #eee2f7; }
+    .cake { font-size: 76px; margin: 22px 0 10px; filter: drop-shadow(0 8px 18px #0005); }
+    .button {
+      display: inline-block; margin-top: 22px; padding: 14px 25px; border-radius: 999px;
+      color: #2b173c; background: #ffd99d; text-decoration: none;
+      font: bold 14px Arial, sans-serif; border: 0; cursor: pointer;
+      box-shadow: 0 8px 24px #0003;
+    }
+    section { padding: 68px 20px; }
+    .message { background: #fff8f1; color: #332143; }
+    h2 { font-size: clamp(28px, 5vw, 42px); margin: 0 0 18px; }
+    .message p { max-width: 720px; margin: 0 auto; font: 17px/1.9 Arial, sans-serif; }
+    .cards {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px; max-width: 900px; margin: 30px auto 0;
+    }
+    .card {
+      padding: 25px 20px; border: 1px solid #ffffff24; border-radius: 18px;
+      background: #ffffff0b;
+    }
+    .card .emoji { font-size: 34px; }
+    .card h3 { color: #ffd99d; margin: 12px 0 8px; }
+    .card p { font: 14px/1.7 Arial, sans-serif; color: #e9dff2; margin: 0; }
+    .memories { background: #211536; }
+    .photo-box {
+      max-width: 480px; min-height: 230px; margin: 28px auto 0; padding: 14px;
+      border: 1px dashed #ffd99d88; border-radius: 22px;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      color: #d8c9e6; font: 14px/1.7 Arial, sans-serif;
+    }
+    .photo-box img { max-width: 100%; max-height: 440px; border-radius: 14px; display: block; }
+    input[type="file"] { max-width: 100%; margin-top: 15px; color: #fff; }
+    .wish { background: linear-gradient(145deg, #59356f, #211536); }
+    .wish p { font: 17px/1.8 Arial, sans-serif; max-width: 650px; margin: 0 auto; }
+    footer { padding: 25px 15px; color: #cbb8dc; font: 12px Arial, sans-serif; background: #100a1e; }
+    #surprise { margin-top: 22px; color: #ffd99d; font-size: 23px; min-height: 34px; }
+    html { scroll-behavior: smooth; }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="glow"></div>
+    <div class="eyebrow">A little celebration made with love</div>
+    <h1>Happy Birthday,<br><span>Anis Chacha!</span></h1>
+    <p class="subtitle">Today is all about celebrating the wonderful person you are. May your day be full of smiles, warmth, and beautiful moments.</p>
+    <div class="cake">🎂</div>
+    <a class="button" href="#message">A birthday message for you ↓</a>
+  </header>
+
+  <section class="message" id="message">
+    <h2>Dear Anis Chacha 💛</h2>
+    <p>
+      Happy Birthday to an amazing chacha! May Allah bless you with good health,
+      happiness, peace, success, and countless reasons to smile. May the year ahead
+      bring you barakah, beautiful surprises, and all the goodness your heart deserves.
+      Thank you for being such a special part of our family. Today, we celebrate YOU!
+    </p>
+  </section>
+
+  <section>
+    <h2>Wishing You…</h2>
+    <div class="cards">
+      <div class="card"><div class="emoji">🌟</div><h3>Endless Happiness</h3><p>May your days be bright and your heart always feel light.</p></div>
+      <div class="card"><div class="emoji">🤲</div><h3>Allah's Blessings</h3><p>May Allah protect you, guide you, and bless you in every step.</p></div>
+      <div class="card"><div class="emoji">🎉</div><h3>Wonderful Memories</h3><p>May this new year of life bring laughter, love, and adventures.</p></div>
+    </div>
+  </section>
+
+  <section class="memories">
+    <h2>A Special Memory 📸</h2>
+    <p class="subtitle">Add a favourite photo of Anis Chacha here to make this page extra special.</p>
+    <div class="photo-box">
+      <div id="photoMessage">Your favourite photo will appear here ✨</div>
+      <img id="birthdayPhoto" alt="A special birthday memory" hidden>
+      <label for="photoInput" class="button">Choose a photo</label>
+      <input id="photoInput" type="file" accept="image/*">
+    </div>
+  </section>
+
+  <section class="wish">
+    <h2>A Little Birthday Surprise 🎁</h2>
+    <p>There's one important thing left to say…</p>
+    <button class="button" onclick="showSurprise()">Open your birthday surprise ✨</button>
+    <div id="surprise" aria-live="polite"></div>
+  </section>
+
+  <footer>Made with lots of love for Anis Chacha · Happy Birthday! 🎈</footer>
+
+  <script>
+    // This small script lets you preview a photo you choose on your device.
+    const photoInput = document.getElementById("photoInput");
+    photoInput.addEventListener("change", function () {
+      const file = this.files[0];
+      if (file) {
+        document.getElementById("birthdayPhoto").src = URL.createObjectURL(file);
+        document.getElementById("birthdayPhoto").hidden = false;
+        document.getElementById("photoMessage").hidden = true;
+      }
+    });
+
+    function showSurprise() {
+      document.getElementById("surprise").textContent =
+        "May Allah keep you smiling always, Anis Chacha! You are loved more than words can say. 💛🎂";
+    }
+  </script>
+</body>
+</html>
